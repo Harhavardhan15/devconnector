@@ -1,10 +1,15 @@
 const express =  require('express');
 const connectDB = require('./config/db');
-
 const app = express();
+
 //Connect Database
 connectDB();
 
+// For parsing application/json 
+app.use(express.json()); 
+  
+// For parsing application/x-www-form-urlencoded 
+app.use(express.urlencoded({ extended: true })); 
 app.get("/", (req,res) => res.send(`API Running`));
 
 //define routes

@@ -1,5 +1,0 @@
-
-{
-    "mongoURI":"mongodb+srv://admin-harsha:<Password>@cluster0.2j9i0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    "jwtSecret":"thisisasecret"
-}
